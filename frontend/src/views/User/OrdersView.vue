@@ -8,7 +8,7 @@
                         <template>
                             <v-list-item-action>
                                 <v-checkbox color="primary"
-                                :input-value="order.done"></v-checkbox>
+                                :input-value="order.done" @click="markDone(order)"></v-checkbox>
                             </v-list-item-action>
                         </template>
                         <v-list-item-title>{{ order.name }}</v-list-item-title>
@@ -39,9 +39,16 @@
           done: true,
         },
       ],
+    } ;
+    },
+    methods: {
+	markDone(order) {
+		order.done = !order.done
+		console.log(order.done)
+	},
+},
 
     }
-    }
-    }
+    
     </script>
     
