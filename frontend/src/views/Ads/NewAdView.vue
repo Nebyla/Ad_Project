@@ -55,6 +55,7 @@ export default {
                     title: this.title,
                     desc: this.description,
                     promo: this.promo,
+                    src: "https://img2.akspic.ru/previews/4/6/7/5/6/165764/165764-zvezdnye_vojny-dart_vejder-lyuk_skajuoker-dzhedaj-atmosfera-550x310.jpg"
                 };
                 console.log(ad);
             }
