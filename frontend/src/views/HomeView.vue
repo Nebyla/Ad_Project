@@ -28,7 +28,7 @@
   </v-card-title>
   <v-card-actions>
   <v-spacer></v-spacer>
-  <v-btn text :to="'/ad/' + ad.id"> Open </v-btn>
+  <v-btn color="black" text :to="'/ad/' +  ad.id"  >Open</v-btn>
   <v-btn raised color="primary"> Buy </v-btn>
   </v-card-actions>
   </v-card>
