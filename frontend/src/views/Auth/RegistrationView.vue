@@ -61,12 +61,13 @@ confirmPasswordRules: [v => !!v || 'Password is required',v => v === this.passwo
 };
 },
 methods:{
-onSubmit() {
-if (this.$refs.form.validate()) {
-const user = {
-email: this.email,
-password: this.password,
-};
+	onSubmit(){
+	if (this.$refs.form.validate()){
+		const user = {
+			email: this.email,
+			password: this.password
+		}
+		this.$store.dispatch('registerUser', user)
 console.log(user);
 			}
 		},
