@@ -51,15 +51,21 @@ passwordRules: [(v) => !!v || "Name is required",(v) =>(v && v.length >= 6) ||"P
 };
 },
 methods:{
-onSubmit() {
-if (this.$refs.form.validate()) {
-const user = {
-email: this.email,
-password: this.password,
-};
-console.log(user);
-			}
-		},
+	onSubmit(){
+	if (this.$refs.form.validate()){
+		const user = {
+			email: this.email,
+			password: this.password
+		}
+		this.$store.dispatch('loginUser', user)
+		.then(() => {
+			this.$router.push("/")
+		})
+		.catch((err) => {
+			console.log(err.message)
+		})
+	}
+}
 	},
 };
 </script>
