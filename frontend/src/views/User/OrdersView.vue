@@ -30,15 +30,6 @@
     export default {
     data () {
     return {
-        orders: [
-        {
-          id: "123",
-          name: "Kostya",
-          phone: "+7(978)000-00-05",
-          adId: "1",
-          done: true,
-        },
-      ],
     } ;
     },
     methods: {
@@ -46,6 +37,12 @@
 		order.done = !order.done
 		console.log(order.done)
 	},
+    computed: {
+ads(){
+return this.$store.getters.myAds
+}
+}
+
 },
 
     }
