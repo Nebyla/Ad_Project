@@ -7,6 +7,7 @@ export default {
             promo: true,
             src: "https://img2.akspic.ru/previews/4/7/7/7/6/167774/167774-stalker_2_the_return_of_old_friend-x750.jpg",
             id: "1",
+            userId: "1"
             },
             {
             title: "Second",
