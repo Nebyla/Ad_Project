@@ -82,7 +82,9 @@
 	this.modal = false
 	}
 	}
-} 
+},
+
+
 
     }
 </script>
