@@ -6,6 +6,7 @@ import router from './router'
 import store from './store'
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import BuyAdModal from './views/Shared/BuyAdModal';
 
 loadFonts()
 const firebaseConfig = {
@@ -26,3 +27,4 @@ createApp(App).use(router)
   .use(store)
   .use(vuetify)
   .mount('#app')
+  .component("buy-ad-modal",BuyAdModal)
